@@ -22,7 +22,7 @@
       height: 400px;
       perspective: 1000px;
       cursor: pointer;
-      animation: bounce 1s infinite alternate; /* Added animation property */
+      animation: bounce 1s infinite alternate;
     }
     @keyframes bounce {
       0% {
@@ -85,8 +85,13 @@
   </style>
 </head>
 <body>
+  <audio id="flipSound">
+    <source src="pageflip.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
   <div class="card-container">
-    <div class="card" onclick="this.classList.toggle('flip')">
+    <div class="card" onclick="flipCard()">
       <div class="card-inner">
         <div class="card-front">
           <div class="heart">&hearts;</div>
@@ -98,5 +103,17 @@
       </div>
     </div>
   </div>
+
+  <script>
+    function flipCard() {
+      var card = document.querySelector('.card');
+      card.classList.toggle('flip');
+
+      // Play flip sound
+      var flipSound = document.getElementById('flipSound');
+      flipSound.play();
+    }
+
+  </script>
 </body>
 </html>
