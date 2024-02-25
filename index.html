@@ -22,6 +22,15 @@
       height: 400px;
       perspective: 1000px;
       cursor: pointer;
+      animation: bounce 1s infinite alternate; /* Added animation property */
+    }
+    @keyframes bounce {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-10px);
+      }
     }
     .card-inner {
       position: absolute;
