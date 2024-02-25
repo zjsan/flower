@@ -21,6 +21,7 @@
       width: 300px;
       height: 400px;
       perspective: 1000px;
+      cursor: pointer;
     }
     .card-inner {
       position: absolute;
@@ -80,29 +81,10 @@
       <div class="card-inner">
         <div class="card-front">
           <div class="heart">&hearts;</div>
-          <p>Open me to reveal the message...</p>
+          <p>Click me to reveal the message...</p>
         </div>
         <div class="card-back">
           <p>I miss you :></p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="card-container" style="display: flex;">
-    <div class="card" onclick="this.classList.toggle('flip')">
-      <div class="card-inner">
-        <div class="card-front">
-          <div class="heart">&hearts;</div>
-          <p>Dear [Name],</p>
-        </div>
-        <div class="card-back">
-          <div class="message">
-            <p>On this special day, I just want to take a moment to express how much you mean to me. Your love fills my days with joy, and your presence in my life is a constant source of happiness.</p>
-            <p>Every moment spent with you is a treasure, and I cherish the memories we've created together. You are my rock, my confidant, and my greatest support.</p>
-            <p>On Valentine's Day and every day, I am grateful to have you by my side. Here's to many more moments of love, laughter, and unforgettable adventures together.</p>
-            <p>With all my love,<br><span class="signature">[Your Name]</span></p>
-          </div>
         </div>
       </div>
     </div>
